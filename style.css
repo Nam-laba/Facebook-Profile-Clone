@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(230, 230, 230);
+}
+header{
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.4) 25%, rgba(215, 196, 196, 0.4) 50%, rgb(255, 255, 255)100%);
+    position: relative;
+    box-shadow: 0 0 1px 0px rgb(122, 122, 122);
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.nav-left{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 1%;
+}
+
+.nav-left img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.search-area{
+    height: 30px;
+    width: 70%;
+    background-color: rgb(231, 228, 228);
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search-area i{
+    margin: 0 10px;
+    opacity: 50%;
+    font-size: 14px;
+}
+.search-area input{
+    width: 80%;
+    line-height: 20px;
+    font-size: 14px;
+    outline: none;
+    background-color: rgb(231, 228, 228);
+    border: none;
+}
+
+
+.nav-mid{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-mid i{
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-mid i:hover{
+    border-radius: 10px;
+    background-color: rgb(231, 228, 228);
+}
+
+.nav-right{
+    width:20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: 80%;
+}
+.nav-right img:hover{
+    opacity: 100%;
+}
+.nav-right > i{
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(231, 228, 228);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 80%;
+}
+.nav-right > i:hover{
+    opacity: 100%;
+}
+.menu-icon{
+    margin-right: 10px;
+    background: rgb(231, 228, 228);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 80%;
+}
+.menu-icon:hover{
+    opacity: 100%;
+}
+.menu-icon i{
+    margin:0;
+    padding:0;
+    position: absolute;
+    left: 13px;
+}
+.menu-icon i:nth-of-type(1){
+    top: 5px;
+}
+.menu-icon i:nth-of-type(2){
+    top: 10px;
+}
+.menu-icon i:nth-of-type(3){
+    top: 15px;
+}
+.banner-content{
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.banner-image{
+    width: 100%;
+    height: 450px;
+}
+.banner-image img{
+    width: 100%;
+    height: 100%;
+}
+.profile-area{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin:0 auto;
+    height: 90px;
+    border-bottom: 1px solid dimgray;
+}
+.profile-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+.profile-name p {
+    font-size: 12px; 
+    color: gray;
+    margin-top: 5px; 
+}
+.profile-name img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    top: -70px;
+}
+.profile-name .active-blue{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(228, 228, 228);
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 112px;
+}
+.profile-name h3{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+.profile-option{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+.fa-camera {
+    border-radius: 40%;
+    position: absolute;
+    top: 42px;
+    left: 119px;
+    font-size: 16px
+}
+.profile-option > p{
+    padding: 5px 10px;
+    background-color:blue ;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 80%;
+}
+.profile-option > p i{
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.697);
+}
+.profile-option > p:first-child {
+    color: rgba(255, 255, 255, 0.878);
+}
+.profile-option > p:last-child{
+    background-color: rgb(228, 225, 225);
+    color: black;
+}
+.profile-option > p:last-child i{
+    color: black;
+}
+.profile-option > p:hover{
+    opacity: 100%;
+}
+.menu-items{
+    width: 90%;
+    height: 50px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    opacity: 70%;
+}
+.menu ul li:nth-child(1) a{
+    color: blue;
+    position: relative;
+}
+.menu ul li:nth-child(1) a::after{
+    content: "";
+    height: 4px;
+    width:100%;
+    background-color: blue;
+    position: absolute;
+    top: 102%;
+    left: 0%;
+}
+.menu ul li:nth-child(1) a:hover{
+    background-color: white;
+}
+.menu ul li a:hover{
+    background-color:rgb(231, 228, 228) ;
+    border-radius: 5px;
+}
+.menu-option{
+    margin-right: 10px;
+}
+.menu-option i{
+    padding: 10px 15px;
+    background-color: rgb(231, 228, 228);
+    cursor: pointer;
+    opacity: 70%;
+    border-radius: 5px;
+}
+.menuoption i:hover{
+    opacity: 100%;
+}
+.main-content{
+    width: 63%;
+    height: auto;
+    margin:0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+.content-left{
+    width: 45%;
+    height: 210px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: gray;
+    border: 1px solid rgb(227, 224, 224);
+}
+.content1-1 h3{
+    padding: 10px 0;
+}
+.content1-1 p{
+    padding: 5px 0;
+}
+.content1-1 p > i{
+    width: 30px;
+    font-size: 18px;
+}
+.content1-1 p strong:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.content-right{
+    width: 55%;
+    height: 110px;
+    background: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(227, 224, 224);
+}
+.content2-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content2-1-upper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.content2-1-upper img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.content2-1-upper input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(245, 240, 240);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.content2-1-upper input:hover{
+    background-color: rgb(230, 233, 233);
+}
+.content2-1-lower{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.content2-1-lower p{
+    text-align: center;
+    padding: 5px 10px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 60%;
+}
+.content2-1-lower p:hover{
+    background-color:rgb(231, 228, 228) ;
+    border-radius: 5px;
+}
+.content2-1-lower p i{
+    margin-right: 5px;
+}
+.content2-1-lower p:nth-child(1) i{
+    color: green;
+}
+.content2-1-lower p:nth-child(2) i{
+    color: blue;
+}
+.content2-1-lower p:nth-child(3) i{
+    color: coral;
+}
+
+.mid{
+    height: 100px;
+}
